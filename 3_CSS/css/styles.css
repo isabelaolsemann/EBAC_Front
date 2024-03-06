@@ -1,0 +1,133 @@
+/* seletor (tag, id, class) {
+    propriedade: valor
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* pega apenas o filho direto */
+body > header {
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    /* elemento em uma linha */
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+.container {
+    /* tamanho de um pc comum */
+    width: 1366px;
+    /* centralizar o elemento */
+    margin: 1rem auto;
+}
+
+.articles {
+    display: flex;
+    /* quebra a info dependendo do tamanho da tela */
+    flex-wrap: wrap;
+    /* espaço distribido de forma iqualitaria entre os items */
+    justify-content: space-between;
+}
+
+/* evitar scroll-bar embaixo */
+.articles article img {
+    width: 100%;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2, 
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.articles article a {
+    color: #fff;
+    padding: 8px;
+    /* tira a sobreposição inline que vem configrado no a */
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports .articles article a {
+    background-color: #009432;
+}
+
+#economy {
+    background-color: #fffb90;
+}
+
+#economy .articles article a {
+    background-color: #ff9f1a;
+}
+
+#science {
+    background-color: #fcd4cd;
+}
+
+#science .articles article a {
+    background-color: #570505;
+}
+
+#technology {
+    background-color: #cfbdfc;
+}
+
+#technology .articles article a {
+    background-color: #13023b;
+}
