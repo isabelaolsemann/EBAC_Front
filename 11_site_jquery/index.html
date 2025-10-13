@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca com Jquery</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- CSS-->
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+<body>
+    <header>
+        <div id="menu-hamburger">
+            <div class="menu-hamburger">
+                <h1>Blueread</h1>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#livros">Livros</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="carrossel-images">
+        <img src="/img/hero-biblioteca1.png" alt="">
+        <!--         <img src="/img/hero-biblioteca2.png" alt="">-->
+        <img src="/img/hero-biblioteca3.png" alt="">
+    </div>
+
+    <section id="sobre">
+        <div class="content-about">
+            <h2>Transforme a leitura <br> no seu novo hobbie</h2>
+            <p>Descubra as melhores opções de livros</p>
+            <a href="#contato">Nosso contato</a>
+        </div>
+        <div>
+            <img src="/img/R.jpeg" alt="livraria">
+        </div>
+    </section>
+
+    <section id="livros">
+        <h2>Melhores livros</h2>
+        <div class="all-books">
+            <div class="book-content">
+                <img src="/img/a-cabeca-do-santo-1.jpg" alt="A Cabeça do Santo">
+                <h3>A Cabeça do Santo</h3>
+                <h4>João Ubaldo Ribeiro</h4>
+                <p>R$ 39,90</p>
+            </div>
+
+            <div class="book-content">
+                <img src="/img/a-empregada.jpg" alt="A Empregada">
+                <h3>A Empregada</h3>
+                <h4>Maria Fernandes</h4>
+                <p>R$ 49,50</p>
+            </div>
+
+            <div class="book-content">
+                <img src="/img/abundancia-2.jpg" alt="Abundância">
+                <h3>Abundância</h3>
+                <h4>Luiz Carvalho</h4>
+                <p>R$ 29,90</p>
+            </div>
+
+            <div class="book-content">
+                <img src="/img/antifragil-nova-edicao.jpg" alt="Antifrágil">
+                <h3>Antifrágil</h3>
+                <h4>Nassim Nicholas Taleb</h4>
+                <p>R$ 79,90</p>
+            </div>
+
+            <div class="book-content">
+                <img src="/img/capitalismo-racial.jpg" alt="Capitalismo Racial">
+                <h3>Capitalismo Racial</h3>
+                <h4>Claudia Santos</h4>
+                <p>R$ 59,90</p>
+            </div>
+
+            <div class="book-content">
+                <img src="/img/crepusculo-1.jpg" alt="Crepúsculo">
+                <h3>Crepúsculo</h3>
+                <h4>Stephenie Meyer</h4>
+                <p>R$ 69,90</p>
+            </div>
+
+            <div class="book-content">
+                <img src="/img/filho-teu-nao-foge-a-luta.jpg" alt="Filho Teu Não Foge à Luta">
+                <h3>Filho Teu Não Foge à Luta</h3>
+                <h4>Carlos Menezes</h4>
+                <p>R$ 34,90</p>
+            </div>
+
+            <div class="book-content">
+                <img src="/img/imagens-estranhas.jpg" alt="Imagens Estranhas">
+                <h3>Imagens Estranhas</h3>
+                <h4>Ana Beatriz</h4>
+                <p>R$ 44,90</p>
+            </div>
+
+            <div class="book-content">
+                <img src="/img/medieval-contos-de-uma-era-fantastica.jpg" alt="Medieval: Contos de uma Era Fantástica">
+                <h3>Medieval: Contos de uma Era Fantástica</h3>
+                <h4>Ricardo Lopes</h4>
+                <p>R$ 59,90</p>
+            </div>
+
+            <div class="book-content">
+                <img src="/img/nexus-87.jpg" alt="Nexus 87">
+                <h3>Nexus 87</h3>
+                <h4>Fernanda Lima</h4>
+                <p>R$ 24,90</p>
+            </div>
+
+            <div class="book-content">
+                <img src="/img/o-hobbit-2.jpg" alt="O Hobbit">
+                <h3>O Hobbit</h3>
+                <h4>J.R.R. Tolkien</h4>
+                <p>R$ 89,90</p>
+            </div>
+
+            <div class="book-content">
+                <img src="/img/oracao-para-desaparecer.jpg" alt="Oração Para Desaparecer">
+                <h3>Oração Para Desaparecer</h3>
+                <h4>Paula Miranda</h4>
+                <p>R$ 19,90</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="#contato">
+        <div class="contato">
+            <form>
+                <h2>Entre em contato</h2>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome">
+                </div>
+
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone">
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" name="email" placeholder="Digite seu e-mail">
+                </div>
+
+                <div>
+                    <label for="email">Livro que procura:</label>
+                    <input type="text" id="livro" name="text" placeholder="Qual é o produto de seu interesse?">
+                </div>
+
+                <div>
+                    <label for="mensage">Mensagem:</label>
+                    <textarea name="textarea" placeholder="Digite sua mensagem"></textarea>
+                </div>
+
+                <div>
+                    <button>Enviar</button>
+                </div>
+            </form>
+
+            <div class="maps">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.919277251981!2d-46.63881828450624!3d-23.506585484711195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5860f4f0e3cf%3A0x2b079faef76e5071!2sCl%C3%ADnica%20Odonto%20Sol!5e0!3m2!1spt-BR!2sbr!4v1676582358013!5m2!1spt-BR!2sbr"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <h3>Endereço: xxxxxxxx, Número 000, Curitiba - PR</h3>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div>
+            <p>Desenvolvido por: <span>Isabela Olsemann</span></p>
+        </div>
+        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery Mask (plugin) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <!-- slick (se precisar) -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- jquery-validate e mensagens PT-BR (CDN confiável) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/localization/messages_pt_BR.min.js"></script>
+
+    <!-- seu script (deve vir POR ÚLTIMO) -->
+    <script src="/script/script.js"></script>
+</body>
+</html>

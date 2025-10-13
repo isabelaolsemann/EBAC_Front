@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f6f5f4;
+    overflow-x: hidden !important;
+}
+
+section {
+    margin: 4rem 4rem;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: rgb(3 3 48);
+}
+
+#menu-hamburger,
+footer {
+    background-color: rgb(3 3 48);
+    color: #fff;
+}
+
+a {
+    color: inherit;      
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.menu-hamburger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 4rem; /* 20px 64px -> 1.25rem 4rem */
+}
+
+.menu-hamburger i:hover {
+    color: yellow;
+}
+
+nav {
+    position: relative;
+    z-index: 10; 
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(31 29 68);
+    padding: 0.75rem 4rem; /* 12px 64px -> 0.75rem 4rem */
+    color: #fff;
+}
+
+nav a {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/*--------------- Carrossel -------------*/
+
+#carrossel-images img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: top;
+}
+
+
+/*--------------- Sobre ---------------*/
+#sobre {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    background-color: #cfd9e7b0;
+    height: 402px;
+    border-radius: 0 20px 20px 0;
+}
+
+#sobre img {
+    height: 409px;
+    border-radius: 0 20px 20px 0;
+}
+
+#sobre h2 {
+    font-size: 1.7rem;
+    padding-right: 50px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+#sobre p {
+    font-size: 1rem;
+    padding-right: 50px;
+    margin-bottom: 20px;
+}
+
+#sobre a {
+    background-color:  rgb(31 29 68);
+    color: #fff;
+    padding: 6px;
+    margin-right: 50px;
+}
+
+/*--------------- Books -------------*/
+
+.book-content img {
+    height: 20.375rem; /* 326px -> 20.375rem */
+    box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,0.1); /* 8px 20px -> 0.5rem 1.25rem */
+    transition: transform 0.1s, box-shadow 0.3s; 
+}
+
+.book-content h3 {
+    padding-top: 0.375rem; /* 6px -> 0.375rem */
+    font-size: 1rem;
+}
+
+.book-content h4 {
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.book-content p {
+    font-size: 0.9rem;
+}
+
+.book-content {
+    flex: 0 0 calc(20% - 1rem); /* 5 livros por linha, ajustando gap */
+    box-sizing: border-box;
+    padding-bottom: 0.5rem; /* 8px -> 0.5rem */
+    cursor: pointer;
+}
+
+.all-books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.25rem; /* 20px -> 1.25rem */
+    margin: 1.25rem 0; /* 20px -> 1.25rem */
+}
+
+/*--------------- Contato -------------*/
+.contato {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 2.625rem 0 3.25rem 0; /* 42px 52px -> 2.625rem 3.25rem */
+    align-items: center;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0; /* 8px -> 0.5rem */
+}
+
+form {
+    width: 40%;
+}
+
+form label {
+    font-size: 1rem; /* 16px -> 1rem */
+    font-weight: 600;
+}
+
+form input,
+form textarea {
+    font-size: 0.875rem; /* 14px -> 0.875rem */
+    width: 100%;
+    padding: 0.5rem; /* 8px -> 0.5rem */
+    background-color: #f6f5f4;
+    border: 0.125rem solid #ccccccb0; /* 2px -> 0.125rem */
+    border-radius: 0.25rem; /* 4px -> 0.25rem */
+}
+
+form textarea {
+    resize: none;
+}
+
+form button {
+    padding: 0.625rem; /* 10px -> 0.625rem */
+    background-color: rgb(3 3 48);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(15, 15, 100);
+}
+
+.maps {
+    width: 50%;
+}
+
+.maps h3 {
+    font-size: 1rem; /* 16px -> 1rem */
+    font-weight: 600;
+}
+
+/*--------------- Footer -------------*/
+
+footer {
+    padding: 1.25rem 4rem; /* 20px 64px -> 1.25rem 4rem */
+    text-align: center;
+}
+
+footer div {
+    border-bottom: 0.0625rem solid #fff; /* 1px -> 0.0625rem */
+    margin: 0.5rem; /* 8px -> 0.5rem */
+    padding: 0.5rem; /* 8px -> 0.5rem */
+}
+
+footer div span {
+    font-weight: 700;
+}
+
+footer i {
+    cursor: pointer;
+    padding: 0 0.625rem; /* 10px -> 0.625rem */
+    margin: 0.25rem; /* 4px -> 0.25rem */
+}
+
+footer i:hover {
+    color: yellow;
+}
+
+/*--------------- Responsividade -------------*/
+
+@media (max-width: 1200px) {
+    section {
+        margin: 0 2rem;
+    }
+
+    .menu-hamburger,
+    nav ul,
+    footer {
+        padding: 1rem 2rem;
+    }
+
+    .book-content {
+        flex: 0 0 calc(33.33% - 1rem); /* 3 livros por linha */
+    }
+
+    form {
+        width: 50%;
+    }
+
+    .maps {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .book-content {
+        flex: 0 0 calc(50% - 1rem); /* 2 livros por linha */
+    }
+
+    .contato {
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .maps {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-content {
+        flex: 0 0 100%; /* 1 livro por linha */
+    }
+
+    .all-books {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.25rem;
+        margin: 1.25rem 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}
