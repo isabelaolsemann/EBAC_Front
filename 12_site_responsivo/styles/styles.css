@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit;   
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    padding: 12px 64px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+    align-items: center;
+    color: black;
+}
+
+header a {
+    color: black;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+header a:hover {
+    border-bottom: 2px solid rgb(255, 0, 128);
+}
+
+header h1 {
+    color:  rgb(255, 0, 128);
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 0, 128);
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+section,
+main {
+    padding: 42px 76px;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+
+#sobre img {
+    width: 100%;
+    border-radius: 0 50px 0 50px;
+}
+
+#sobre h2 {
+    margin-bottom: 12px;
+}
+
+.container-tenis {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.tenis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tenis > div {
+    padding-right: 20px;
+}
+
+.tenis img {
+    max-width: 250px;
+}
+
+.tenis h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    height: 50px;
+}
+
+.tenis h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    height: 50px;
+}
+
+.tenis p {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #828282;
+}
+
+.tenis span {
+    color: #0a0a0a;
+}
+
+.ofertas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ofertas div {
+    width: 50%;
+}
+
+.trolli {
+    display: flex;
+    justify-content: end;
+}
+
+.trolli i{
+    background-color: rgb(255, 0, 128);
+    color: #fff;
+    padding: 8px;
+    border-radius: 18px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.trolli i:hover{
+    color: rgb(187, 74, 130);
+}
+
+footer {
+    color: #fff;
+    background-color: rgb(255, 0, 128);
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 20px 76px;
+    text-align: center;
+}
+
+
+/*Responsividade Tablet (de 641px até 1023px):*/
+
+/* Tablet: 641px até 1023px */
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    /* estilos para tablet */
+    header ul {
+        width: 32%;
+    }
+
+    #sobre {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    #produtos {
+        margin-bottom: 62px;
+    }
+
+    .container-tenis {
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    .tenis h4 {
+        height: 60px;
+    }
+
+    .trolli i{
+        padding: 6px;
+        border-radius: 18px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile: até 640px */
+@media screen and (max-width: 640px) {
+    /* estilos para mobile */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1{
+        font-size: 1.5rem;
+    }
+    header ul {
+        justify-content: space-around;
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    #sobre {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .container-tenis {
+        grid-template-columns: repeat(1, 100%);
+        column-gap: 0;
+        row-gap: 2%;
+    }
+
+    .tenis h4 {
+        height: 60px;
+    }
+
+    .tenis img {
+        max-width: 150px;
+    }
+
+    #produtos {
+        margin-bottom: 100px;
+    }
+}
