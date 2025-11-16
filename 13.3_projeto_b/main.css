@@ -1,0 +1,55 @@
+body {
+    font-family: Roboto,sans-serif;
+}
+.navbar {
+    background-color: #151616;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #1192fc;
+    color: #ffffff;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #ffffff;
+}
+
+.navbar-brand {
+    font-family: Ubuntu, cursive;
+}
+
+.navbar-toggler {
+    background-color: #1192fc;
+}
+
+.color-title {
+    color: #1192fc;
+}
+
+.nav-cardapio .nav-link.active,
+#contato button {
+    background-color: #1192fc;
+    color: #ffffff;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: #1192fc;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+#contato,
+#servicos {
+    background-color: #eef0f4;
+}
+
