@@ -1,0 +1,52 @@
+/* Define a fonte Inter como padrão */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5; 
+    scroll-behavior: smooth;
+    padding-top: 56px; /
+}
+
+#inicio {
+    padding-top: 80px !important; 
+    margin-top: -56px; 
+}
+
+/* Estilo para a seção do Carousel */
+.carousel-item img {
+    height: 450px; 
+    object-fit: cover; 
+    border-radius: 0.75rem;
+}
+
+/* Estiliza os cards */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1rem; 
+}
+.card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 1rem 3rem rgba(13, 110, 253, 0.2) !important; 
+}
+
+/* Estilo para o botão */
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+}
+
+/* Ajuste do caption do carousel */
+.carousel-caption {
+    bottom: 20px;
+    padding: 10px 20px;
+}
+
+section {
+    padding-top: 60px; /* Garante que o conteúdo não fique escondido sob o navbar ao navegar */
+}
