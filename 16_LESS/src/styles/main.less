@@ -1,0 +1,51 @@
+@import "_variables.less";
+@import "_header.less";
+@import "_products.less";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @mainFont;
+}
+
+body {
+    background-color: @bodyBgColor;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+// ESCAPING
+.example-escaping::after {
+    content: ~"\"Esta é uma mensagem literal.\"";
+    display: none;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .products {
+        display: block;
+    }
+
+    .product-item {
+        margin-bottom: 32px;
+    }
+}

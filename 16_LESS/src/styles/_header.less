@@ -1,0 +1,33 @@
+header {
+    background-color: @headerBgColor;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: @paddingHeader 0;
+
+        .branding img {
+            height: 100px; 
+            width: auto;
+        }
+
+        .menu {
+            display: flex;
+
+            li {
+                list-style: none;
+                font-weight: bold;
+                margin-left: @marginLeftMenu;
+
+                a {
+                    color: @textColor;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
