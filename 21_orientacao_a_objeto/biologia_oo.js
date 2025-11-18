@@ -1,4 +1,4 @@
-// CLASSE MÃE (ABSTRAÇÃO): SER VIVO
+// SER VIVO
 function SerVivo(nomeCientifico, reino, locomocao) {
     this.nomeCientifico = nomeCientifico;
     this.reino = reino; 
